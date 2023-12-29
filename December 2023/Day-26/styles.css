@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ---------- Header ---------- */
+
+.header {
+    min-width: 390px;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.header--span {
+    padding: 5px 10px;
+    font-size: .8rem;
+    font-weight: 500;
+    border-radius: 20px;
+    background-color: blueviolet;
+    color: white;
+}
+
+.header--title {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    line-height: 1.1;
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+
+.header--text {
+    padding: 10px 0;
+    line-height: 1.4;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: blueviolet;
+}
+
+/* ---------- First Card ---------- */
+
+.first-card {
+    margin-bottom: 50px;
+}
+
+.first-card a {
+    text-decoration: none;
+}
+
+.first-card--image {
+    width: 100vw;
+    height: 400px;
+    min-width: 390px;
+    background-image: url(./images/galaxy-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.first-card--text {
+    margin: 0 auto;
+    padding-top: 100px;
+    width: 70%;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 300;
+}
+
+/* ---------- Second Card ---------- */
+
+.second-card {
+    width: 100vw;
+    height: 400px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.second-card--image {
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+}
+
+.second-card--title {
+    margin: 20px 0;
+    padding: 0 30px;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.second-card--text {
+    margin: 0 0 0 30px;
+    width: 80%;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+/* ---------- Button ---------- */
+
+button {
+    width: 80%;
+    height: 100px;
+    margin: 50px 0;
+    padding: 20px;
+    font: inherit;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+/* ---------- Query Styles ---------- */
+
+/* md */
+@media (min-width: 720px) {
+    .header--text {
+        margin: 0 auto;
+        width: 70%;
+        font-size: 1.175rem;
+    }
+
+    .first-card {
+        position: relative;
+
+        transition: all 0.2s ease-in;
+    }
+
+    .first-card:hover {
+        text-shadow:0px 0px 30px blueviolet;
+        -moz-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        -webkit-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+    }
+
+    .first-card--image {
+        margin: 0 auto;
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    .first-card--text {
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 50px;
+        padding-left: 50px;
+        width: 50%;
+        font-size: 2rem;
+    }
+
+    .second-card {
+        margin: 0 auto;
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    .second-card--image {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        cursor: pointer;
+    }
+
+    .second-card--text {
+        font-size: 1.175rem;
+    }
+
+    button {
+        width: 50%;
+        border: 1px solid black;
+        color: black;
+        background-color: transparent;
+    
+        transition: all .3s ease;
+    }
+
+    button:hover {
+        color: white;
+        background-color: blueviolet;
+        border: none;
+    }
+
+    button {
+        width: 50%;
+    }
+}
+
+/* lg */
+@media (min-width: 1280px) {
+    .header--title {
+        font-size: 2.2rem;
+    }
+
+    .header--text {
+        font-size: 1.5rem;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .sections-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .first-card {
+        margin-left: 100px;
+        flex: 2;
+    }
+
+    .first-card--image {
+        height: 500px;
+    }
+
+    .first-card--text {
+        position: absolute;
+        height: 200px;
+        bottom: 5%;
+        left: 10%;
+        padding: 0;
+        width: 60%;
+        font-size: 2.4rem;
+        font-weight: 500;
+    }
+
+    .second-card {
+        margin-right: 100px;
+        height: 500px;
+        flex: 1;
+    }
+
+    .second-card--title {
+        font-size: 1.8rem;
+    }
+
+    .second-card--image {
+        height: 50%;
+    }
+
+    .second-card--text {
+        font-size: 1.2rem;
+        padding-right: 0;
+    }
+
+    button {
+        width: 20%;
+    }
+}
