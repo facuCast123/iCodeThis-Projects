@@ -1,0 +1,178 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body {
+    width: 100vh;
+    line-height: 1.5;
+    background-color: #f0f3fb;
+}
+
+h1, h2 {
+  text-wrap: balance;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ------------ */
+
+.main-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 6rem;
+    background-color: #fff;
+    color: #39414b;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* Header */
+
+.header-container {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: .5rem;
+}
+
+.header-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.header-text {
+    padding: 0 10%;
+    font-weight: 600;
+}
+
+/* Grid */
+
+.user-grid {
+    padding: 2.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 8em), 1fr));
+    gap: 1rem;
+}
+
+/* Profile cards */
+
+.user-card {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    border: .5rem solid #ecf3fa;
+    border-radius: 10px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 3rem;
+}
+
+.profile-name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#dropdown-btn,
+#dropdown-btn-two {
+    font-size: 1.175rem;
+}
+
+#dropdown-btn:hover,
+#dropdown-btn-two:hover {
+    cursor: pointer;
+    background-color: #ecf3fa;
+}
+
+.add-card {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+.add-card--btn {
+    color: #b9c8e6;
+    font-size: 3rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.add-card--btn i {
+    padding: .25em;
+    border: .07em solid #ecf3fa;
+    border-radius: 50%;
+
+    transition: background-color .5s ease-out;
+}
+
+.add-card--btn i:hover,
+.add-card--btn i:focus {
+    background-color: #ecf3fa;
+}
+
+/* Dropdown options */
+
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -30px;
+    background-color: #f1f1f1;
+    min-width: max-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    padding: .2rem .4rem;
+    display: block;
+}
+
+.dropdown-content li span {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    padding: .2rem;
+}
+
+.dropdown-content li span:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.show {display:block;}

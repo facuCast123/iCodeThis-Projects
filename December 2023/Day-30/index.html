@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 30 - Select Account</title>
+    <!-- Global CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- BoxIcons import -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main-container">
+      <header class="header-container">
+        <h1 class="header-title">Select your profile</h1>
+        <p class="header-text">
+          Logged in users can view full business profiles and can save contact
+          details.
+        </p>
+      </header>
+
+      <div class="user-grid">
+        <div class="user-card">
+          <img
+            class="profile-picture"
+            src="./images/profile-picture.jpg"
+            alt="Profile picture"
+          />
+          <h2 class="profile-name">John Doe</h2>
+          <div class="dropdown">
+            <i id="dropdown-btn" class="bx bx-dots-horizontal-rounded"></i>
+            <ul class="dropdown-content">
+              <li class="dropdown-item">
+                <span><i class="bx bx-pencil"></i>Edit</span>
+              </li>
+              <li class="dropdown-item">
+                <span><i class="bx bx-trash"></i>Delete</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="user-card">
+          <img
+            class="profile-picture"
+            src="./images/profile-picture.jpg"
+            alt="Profile picture"
+          />
+          <h2 class="profile-name">Jane Doe</h2>
+          <div class="dropdown">
+            <i id="dropdown-btn-two" class="bx bx-dots-horizontal-rounded"></i>
+            <ul class="dropdown-content two">
+              <li class="dropdown-item">
+                <span><i class="bx bx-pencil"></i>Edit</span>
+              </li>
+              <li class="dropdown-item">
+                <span><i class="bx bx-trash"></i>Delete</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="add-card">
+          <button class="add-card--btn">
+            <i class="bx bx-plus"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
