@@ -8,10 +8,7 @@
   </head>
   <body>
     <div class="invite-card">
-      <div class="profile-picture"></div>
-      <span class="invite-ref">Tina V. invited you to join</span>
-      <h1 class="invite-title">Channel Name</h1>
-      <span class="invite-users">1k active users • 70k Total users</span>
+      <h1 class="invite-title">Sign In To Your Account</h1>
 
       <form class="invite-form" action="#">
         <label class="form-username" for="username">Username</label>
@@ -19,20 +16,28 @@
           class="form-input"
           name="username"
           type="text"
-          placeholder="How do you like people to call you?"
+          placeholder="Enter your username"
         />
 
-        <div class="terms">
-          <input type="checkbox" />
-          <label for="tos">
-            I have read and agree to the <a href="#">Terms of Service</a> and
-            <a href="#">Privacy Policy</a>.
-          </label>
+        <label class="form-username" for="password">Password</label>
+        <input
+          class="form-input"
+          name="password"
+          type="password"
+          placeholder="Enter your password"
+        />
+
+        <div class="remember">
+          <input type="checkbox" class="remember-check" />
+          <label> Remember my account. </label>
         </div>
+
         <button class="form-btn" type="submit">Continue</button>
       </form>
 
-      <a class="log-in-link" href="./sign-in.html">Already have an account?</a>
+      <a class="log-in-link" href="./index.html"
+        >Don't have an account? Sign up.</a
+      >
     </div>
   </body>
 </html>

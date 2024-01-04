@@ -158,3 +158,13 @@ input, button {
     font-size: .9rem;
     color: cornflowerblue;
 }
+
+/*  */
+
+.remember {
+  padding-bottom: 2rem;
+}
+
+.remember-check {
+  height: 1rem;
+}
